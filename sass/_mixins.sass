@@ -1,0 +1,32 @@
+=tittle($var1,$var2,$var3,$var4)
+    border-bottom: $var1
+    flex-basis: $var2
+    margin-bottom: $var3
+    height: $var4
+
+=tittleH($var1,$var2,$var3,$var4,$var5,$var6,$var7)
+    border-bottom: $var1
+    height: $var2
+    width: $var3
+    text-transform: $var4
+    font-style: $var5
+    font-weight: $var6
+    font-size: $var7
+
+=maxWidth($var1,$var2)
+    max-width: $var1
+    margin: $var2
+
+=mq($breakpoint)
+    @if $breakpoint == phone
+        @media (max-width: 600px)
+            @content
+    @if $breakpoint == tab-port
+        @media (max-width: 900px)
+            @content
+    @if $breakpoint == tab-land
+        @media (max-width: 1024px)
+            @content
+    @if $breakpoint == big-desktop
+        @media (max-width: 1800px)
+            @content

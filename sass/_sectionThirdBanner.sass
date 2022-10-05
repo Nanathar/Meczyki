@@ -1,0 +1,31 @@
+.third-banner
+  height: 250px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px
+  +maxWidth(1940px,0 auto)
+  div
+    flex-basis: 60%
+    height: 230px
+    display: flex
+    cursor: pointer
+    background-color: white
+    overflow: hidden
+    justify-content: center
+    border: 1px solid black
+    div
+      flex-basis: 20%
+      transition: .3s
+      padding: 20px
+    div:hover
+      scale: 1.2
+    div.img4
+      flex-grow: 1
+
++mq(tab-land)
+  .third-banner
+    height: 210px
+    div
+      flex-basis: 80%
+      height: 190px

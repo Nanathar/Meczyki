@@ -1,0 +1,146 @@
+.all-news.active
+  color: white
+.all-news
+  display: flex
+  align-content: center
+  flex-direction: column
+  height: 820px
+  +maxWidth(1400px,0 auto)
+  button
+    flex-basis: 6%
+    margin: 20px 0
+    padding: 15px
+    background-color: transparent
+    border-radius: 7px
+    font-size: 16px
+    color: $colorDetail
+    border: 1px solid #aaa
+    text-transform: uppercase
+    font-weight: bold
+    cursor: pointer
+  button:hover
+    background-color: #aaaaaa25
+  .popular,
+  .meczyki-plus
+    flex-basis: 47%
+    display: flex
+    flex-direction: column
+    div:nth-child(2)
+      display: flex
+      justify-content: space-between
+      div
+        flex-basis: calc( 100% / 7 )
+        display: flex
+        flex-direction: column
+        margin-top: 8px
+        div:nth-child(1)
+          overflow: hidden
+          flex-basis: 160px
+          width: 210px
+          border-radius: 5px
+          cursor: pointer
+          position: relative
+          img
+            height: 100%
+            width: 100%
+            transition: .3s linear
+            position: absolute
+          img:hover
+            scale: 1.03
+            z-index: 1
+          div
+            position: absolute
+            height: 100%
+            width: 100%
+            background: $imgBgcLinear
+          div:hover
+            z-index: -1
+        div:nth-child(2)
+          flex-basis: 140px
+          width: 100%
+          h3
+            font-size: 20px
+            cursor: pointer
+  .popular
+    .title
+      +tittle(2px solid rgb(146, 146, 146),30px,5px,30px)
+      h3
+        +tittleH(2px solid $colorDetail,30px,430px,uppercase,italic,bold,25px)
+        cursor: pointer
+  .meczyki-plus
+    .title
+      +tittle(2px solid rgb(146, 146, 146),30px,5px,30px)
+      display: flex
+      justify-content: space-between
+      h3
+        +tittleH(2px solid $colorDetail,30px,200px,uppercase,italic,bold,25px)
+        cursor: pointer
+      div
+        cursor: pointer
+        p
+          color: $colorDetail
+          text-transform: uppercase
+          font-weight: bold
+      div:hover
+        text-decoration: underline
+        color: $colorDetail
+
++mq(tab-land)
+  .all-news
+    height: 580px
+    +maxWidth(1000px,0 auto)
+    button
+      margin: 5px 0 10px
+      padding: 13px
+    .popular,
+    .meczyki-plus
+      div:nth-child(2)
+        display: flex
+        justify-content: space-between
+        div
+          flex-basis: calc( 100% / 6 )
+          display: flex
+          flex-direction: column
+          margin-top: 8px
+          div:nth-child(1)
+            overflow: hidden
+            flex-basis: 100px
+            width: 150px
+            border-radius: 5px
+            cursor: pointer
+            position: relative
+            img
+              height: 100%
+              width: 100%
+              transition: .3s linear
+              position: absolute
+            img:hover
+              scale: 1.03
+              z-index: 1
+            div
+              position: absolute
+              height: 100%
+              width: 100%
+              background: $imgBgcLinear
+            div:hover
+              z-index: -1
+          div:nth-child(2)
+            flex-basis: 60px
+            width: 100%
+            h3
+              font-size: 15px
+    .popular
+      .title
+        +tittle(2px solid rgb(146, 146, 146),28px,3px,28px)
+        h3
+          +tittleH(2px solid $colorDetail,28px,370px,uppercase,italic,bold,23px)
+          cursor: pointer
+    .meczyki-plus
+      .title
+        +tittle(2px solid rgb(146, 146, 146),28px,3px,28px)
+        display: flex
+        justify-content: space-between
+        h3
+          +tittleH(2px solid $colorDetail,28px,170px,uppercase,italic,bold,23px)
+          cursor: pointer
+

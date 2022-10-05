@@ -1,0 +1,62 @@
+section.footer-box
+  width: 100%
+  background-color: #161e1e
+  height: 900px
+  .wraper
+    +maxWidth(1400px,0 auto)
+    height: 900px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    div
+      flex-basis: 24.2%
+      height: 400px
+      padding-top: 50px
+      ul
+        list-style: none
+        text-transform: uppercase
+        height: 200px
+        display: flex
+        flex-direction: column
+        h4
+          padding-bottom: 12px
+          font-style: italic
+          font-weight: bold
+          font-size: 13px
+          color: $colorDetail
+        li
+          flex-grow: 1
+          border-bottom: 1px solid #3e3f3f
+          padding: 5px 0 5px
+          cursor: pointer
+          a
+            font-size: 10px
+            color: #9da2a2
+            text-decoration: none
+            font-weight: bold
+            width: 100%
+        li:hover
+          text-decoration: underline
+
++mq(tab-land)
+  section.footer-box
+    overflow: hidden
+    height: 700px
+    .wraper
+      height: 700px
+      padding: 5px
+      div
+        flex-basis: 24.2%
+        height: 300px
+        padding-top: 25px
+        ul
+          height: 275px
+          h4
+            padding-bottom: 5px
+
+            font-size: 10px
+          li
+            padding: 2px 0 5px
+            a
+              font-size: 8px
+
