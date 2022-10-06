@@ -7,7 +7,7 @@ const h3 = document.querySelector('h3.promo-buk');
 
 
 //Informacje w tablicach o elementach podmienianych
-const imgPromoChange = ['/img/bukOferta1.jpg', '/img/bukOferta1a.jpg'];
+const imgPromoChange = ['img/bukOferta1.jpg', 'img/bukOferta1a.jpg'];
 const h3Change = ['Rekordowy cashback na polskim rynku w SuperBukmacher! Sprawdz najwyższą ofertę z kodem MECZYKI', 'Szybki zarobek u naszego sprawdzonego bukmachera z kodem MECZYKI bonus do 200zł'];
 
 function changePromotion() {
