@@ -101,6 +101,7 @@ btnSbuzzOff.addEventListener('click', () => {
   closeSbuzz();
 });
 
+// Reszta
 document.querySelectorAll('.off').forEach(offs => {
   offs.addEventListener('click', () => {
     closeGame();
