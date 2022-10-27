@@ -1,1 +1,1 @@
-https://nanathar.github.io/Meczyki/meczyki.html
+https://nanathar.github.io/Meczyki-Clone/meczyki.html
